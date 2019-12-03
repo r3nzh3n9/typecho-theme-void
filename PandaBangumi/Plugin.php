@@ -104,13 +104,13 @@ class PandaBangumi_Plugin implements Typecho_Plugin_Interface
      */
     public static function header()
     {
-        echo '<link rel="stylesheet" href="';
-        Helper::options()->pluginUrl('/PandaBangumi/css/PandaBangumi.24.css');
+        echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/PandaBangumi/js/PandaBangumi.24.js';
+		//Helper::options()->pluginUrl('/PandaBangumi/css/PandaBangumi.24.css');
         echo '?v='.PandaBangumi_Plugin_VERSION.'" />';
         if (!empty(Helper::options()->plugin('PandaBangumi')->bgmst) && in_array('jq', Helper::options()->plugin('PandaBangumi')->bgmst))
         {
-            echo '<script src="';
-            Helper::options()->pluginUrl('/PandaBangumi/js/jq.min.js');
+            echo '<script src="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/PandaBangumi/js/jq.min.js';
+            //Helper::options()->pluginUrl('/PandaBangumi/js/jq.min.js');
             echo '"></script>';
         }
         echo '<script>var bgmBase="';
@@ -127,8 +127,8 @@ class PandaBangumi_Plugin implements Typecho_Plugin_Interface
      */
     public static function footer()
     {
-        echo '<script type="text/javascript" src="';
-        Helper::options()->pluginUrl('/PandaBangumi/js/PandaBangumi.24.js');
+        echo '<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/PandaBangumi/js/PandaBangumi.24.js';
+        //Helper::options()->pluginUrl('/PandaBangumi/js/PandaBangumi.24.js');
         echo '?v='.PandaBangumi_Plugin_VERSION.'"></script>';
     }
 }

@@ -130,11 +130,14 @@ $setting = $GLOBALS['VOIDSetting'];
         }
         </script>
         <?php endif; ?>
-        <script data-manual src="<?php Utils::indexTheme('/assets/bundle-9ba00cc46f.js'); ?>"></script>
+        <!-- <script data-manual src="<?php Utils::indexTheme('/assets/bundle-9ba00cc46f.js'); ?>"></script> -->
+		<script data-manual src="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/VOID/assets/bundle.js"></script>
         <?php if($setting['enableMath']): ?>
-        <script src='<?php Utils::indexTheme('/assets/libs/mathjax/2.7.4/MathJax.js'); ?>'></script>
+        <!-- <script src='<?php Utils::indexTheme('/assets/libs/mathjax/2.7.4/MathJax.js'); ?>'></script> -->
+		<script src="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/VOID/assets/libs/mathjax/2.7.4/MathJax.js')"></script>
         <?php endif; ?>
-        <script src="<?php Utils::indexTheme('/assets/VOID-46af620352.js'); ?>"></script>
+        <!-- <script src="<?php Utils::indexTheme('/assets/VOID-46af620352.js'); ?>"></script> -->
+		<script src="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/VOID/assets/VOID.js"></script>
         <script>
         if($(".OwO").length > 0){
             new OwO({

@@ -92,23 +92,23 @@ class DoubanBoard_Plugin implements Typecho_Plugin_Interface
      */
     public static function footer()
     {
-        echo '<link rel="stylesheet" href="';
-        Helper::options()->pluginUrl('DoubanBoard/assets/DoubanBoard.08.css');
+        echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/Douban/assets/DoubanBoard.08.css';
+        //Helper::options()->pluginUrl('DoubanBoard/assets/DoubanBoard.08.css');
         echo '?v='.DoubanBoard_Plugin_VERSION.'" />';
         echo '<script>var DoubanPageSize='.Helper::options()->plugin('DoubanBoard')->PageSize.'</script>';
         
         if (!empty(Helper::options()->plugin('DoubanBoard')->loadJQ) && in_array('jq', Helper::options()->plugin('DoubanBoard')->loadJQ))
         {
-            echo '<script src="';
-            Helper::options()->pluginUrl('DoubanBoard/assets/jquery.min.js');
+            echo '<script src="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/Douban/assets/jquery.min.js';
+            //Helper::options()->pluginUrl('DoubanBoard/assets/jquery.min.js');
             echo '"></script>';
         }
         echo '<script>var DoubanAPI = "';
         Helper::options()->index('/DoubanBoard');
         echo '"</script>';
 
-        echo '<script type="text/javascript" src="';
-        Helper::options()->pluginUrl('DoubanBoard/assets/DoubanBoard.07.js');
+        echo '<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/Douban/assets/DoubanBoard.07.js';
+        //Helper::options()->pluginUrl('DoubanBoard/assets/DoubanBoard.07.js');
         echo '?v='.DoubanBoard_Plugin_VERSION.'"></script>';
     }
 }

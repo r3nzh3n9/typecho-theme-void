@@ -55,11 +55,11 @@ if (isset($_POST['void_action'])) {
     <?php $this->header('commentReply=&description=&'); ?>
 
     <!--CSS-->
-    <link rel="stylesheet" href="<?php Utils::indexTheme('/assets/bundle-1e9bf597b1.css');?>">
-    <link rel="stylesheet" href="<?php Utils::indexTheme('/assets/VOID-f37eaafb35.css');?>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/VOID/assets/bundle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/VOID/assets/VOID.css">
 
     <!--JS-->
-    <script src="<?php Utils::indexTheme('/assets/bundle-header-25184848f0.js'); ?>"></script>
+    <script src="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/VOID/assets/bundle-header.js"></script>
     <script>
     VOIDConfig = {
         PJAX : <?php echo $setting['pjax'] ? 'true' : 'false'; ?>,
@@ -87,8 +87,16 @@ if (isset($_POST['void_action'])) {
         isDev: false
     }
     </script>
-    <script src="<?php Utils::indexTheme('/assets/header-ea9c1ff326.js'); ?>"></script>
+    <script src="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/VOID/assets/header.js"></script>
     
+    <style>.brand{font-family:customfont,serif;font-weight:normal!important;}@media screen and (max-width:324.5px){main .lazy-wrap .banner-title .post-title{font-size:2.1rem}}</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/r3nzh3n9/typecho-theme-void@3.4.0/VOID/assets/embed.css" />
+	<link rel="icon" type="image/png" sizes="16x16" href="https://ae01.alicdn.com/kf/U4cfdb36b35ea4ed39c29820bad66be69N.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="
+	https://ae01.alicdn.com/kf/U4cfdb36b35ea4ed39c29820bad66be69N.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="
+	https://ae01.alicdn.com/kf/U4cfdb36b35ea4ed39c29820bad66be69N.png"> 
+		
     <?php echo $setting['head']; ?>
     <style>
         <?php if(!empty($setting['desktopBannerHeight'])): ?>
